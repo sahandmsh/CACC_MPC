@@ -1,1 +1,2 @@
-This code presents an impelmetation of the MPC-based cooperative adaptive cruise control.
+### MPC BASED CACC DESIGN
+This code presents an impelmetation of the model predictive control-based (MPC-based) cooperative adaptive cruise control (CACC) design. A regular MPC is used for the leading vehicle while the following vehicles use a hybrid and stochastic MPC. It is assumed that vehicles may operate in three modes (normal, warning, and braking). In normal mode, each car follows its front vehicle considering its desired spacing policy. When warning mode activates, the car slightly increases its headway. When hard braking mode activates, the vehicle uses its maximum deceleration to avoid any possible accident. Please review the "CACC-MPC.ipynb" file for details.
